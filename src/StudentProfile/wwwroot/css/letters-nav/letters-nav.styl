@@ -1,0 +1,33 @@
+$ctx = letters-nav
+$root = s('.%s', $ctx)
+
+{$root}
+  &__affix
+    text-align center
+
+  &__push
+    display none
+
+  &__item
+    color #999
+    text-decoration none
+    margin 0 1ex
+    transition color .3s
+
+    &:hover
+      color #000
+
+  &_affix
+    {$root}__affix
+      position fixed
+      top 0
+      left 0
+      right 0
+      height 18px
+      padding 20px
+      box-shadow inset 0 -1px 1px 0 rgba(#000, 0.16)
+      background #FFF
+
+    {$root}__push
+      display block
+      height 18px

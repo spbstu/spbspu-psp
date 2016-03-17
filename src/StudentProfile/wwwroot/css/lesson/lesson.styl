@@ -1,0 +1,57 @@
+.lesson
+  padding 12px 20px
+
+  & + &
+    border-top solid 1px #E5E5E5
+
+  &__subject
+    font-size 18px
+    line-height 24px
+    margin-bottom 5px
+    color #325A46
+
+  &__time
+    font-style italic
+    font-size 14px
+    float left
+    padding-top 2px
+    margin-right 10px
+    width 80px
+    text-align right
+    color lighten(#464646, 30%)
+
+  &__params
+    font-size 14px
+    margin-left 90px
+    color lighten(#464646, 30%)
+
+  &__teachers
+    margin-top 5px
+
+  &__groups
+    margin-top 5px
+
+  &__group
+    & + &
+      &:before
+        content ", "
+
+  &__places
+    position relative
+    margin-top 5px
+
+    &:before
+      content ''
+      position absolute
+      left -12px
+      top 2px
+      width 8px
+      height 12px
+      background url(/img/icons/point.svg) center no-repeat
+
+  &__link
+    color #999
+    transition color .3s
+
+    &:hover
+      color #000

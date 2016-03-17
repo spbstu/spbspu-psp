@@ -1,0 +1,37 @@
+.groups-list
+  list-style none
+  margin 0
+  padding 0
+
+  &__item
+    display inline-block
+    overflow hidden
+    min-width 140px
+    margin 0 8px 8px 0
+    padding 0
+    border #E5E5E5 1px solid
+    border-radius 3px
+    box-shadow 0 1px 1px 0 rgba(#000, 0.16)
+
+  &__link
+    position relative
+    font-size 16px
+    display block
+    padding 15px 30px
+    text-decoration none
+    color #325A46
+    transition color 0.3s background 0.3s
+
+    &:hover
+      background linear-gradient(to bottom, #fafafa, #f0f0f0)
+      color #21a649
+
+      &:before
+        content ''
+        position absolute
+        left 0
+        right 0
+        bottom 0
+        height 4px
+        background #21a649
+        animation jump-horizontal 0.3s forwards
